@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include "common_util.h"
 #include "temperature_monitor.h"
+#include "message_logger.h"
 #include "typewise-alert.h"
 
 extern char testbuffer[10][1024];
