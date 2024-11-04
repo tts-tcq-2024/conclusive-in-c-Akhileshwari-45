@@ -2,6 +2,7 @@
 #include "common_util.h"
 #include "temperature_monitor.h"
 #include "typewise-alert.h"
+
 extern char testbuffer[10][1024];
 extern int printcount;
 
