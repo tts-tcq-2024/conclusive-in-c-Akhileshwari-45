@@ -13,7 +13,6 @@ TEST(TypeWiseAlertTestSuite,InfersBreachAccordingToLimits) {
     EXPECT_STREQ("feed : 2",testbuffer[0]);
 }
 
-
 TEST(TypeWiseAlertTestSuite,EmailInfersBreachAccordingToLimits) {
     BatteryCharacter batteryChar;
     batteryChar.coolingType = HI_ACTIVE_COOLING;
@@ -30,7 +29,6 @@ TEST(TypeWiseAlertTestSuite,PassivecoolInfersBreachToLimits) {
     EXPECT_STREQ("feed : 2",testbuffer[0]);
 }
 
-
 TEST(TypeWiseAlertTestSuite,PasivecoolEmailInfersBreachToLimits) {
     BatteryCharacter batteryChar;
     batteryChar.coolingType = PASSIVE_COOLING;
@@ -46,7 +44,6 @@ TEST(TypeWiseAlertTestSuite,ActivecoolInfersBreachToLimits) {
     checkAndAlert(TO_CONTROLLER, batteryChar, temperatureInC);
     EXPECT_STREQ("feed : 1",testbuffer[0]);
 }
-
 
 TEST(TypeWiseAlertTestSuite,ActivecoolEmailInfersBreachToLimits) {
     BatteryCharacter batteryChar;
