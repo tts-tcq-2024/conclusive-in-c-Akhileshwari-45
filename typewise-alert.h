@@ -6,6 +6,5 @@ typedef enum {
   TO_EMAIL
 } AlertTarget;
 
-
 void checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC);
 #endif
